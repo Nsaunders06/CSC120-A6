@@ -1,4 +1,7 @@
 Use this file to record your reflection on this assignment.
 
 - What are your initial impressions of how `Inheritance` affects your programming?
+Inheritance is making more sense to me than encapsulation which is good. I think that it is really helpful in terms of being able to organize code and make it readable/easy to follow. I also like how once I spend time making one component work the way I want it to I can continue to use it through my entire program. The only part I am having trouble with is figuring out how to call the exact components that I want, however, I think that with more practice this will come more easily. 
+
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+I am having trouble making sense of the hashtable. Although I read the information about it I generally understand how it works I still do not feel confident using it in my code and am having trouble applying it in my code. This however was the first assingment where I felt like I was starting to fully understand how to set up my code and build a basic scafolding for the code. This was a really good feeling as previously I had felt a little unsure. I therfore would advise that people taking this course in the future give it time to build a foundation as it will come naturally with time. 
