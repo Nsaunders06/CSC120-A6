@@ -18,7 +18,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **YES** 1 pt: The `House` class implements the requested accessors
 
-**PART** 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
+**Yes** 1 pt: The `House` class implements the requested additional methods (`moveIn(...)`, `moveOut(...)`, and `isResident(...)`)
 
 ### Level 2: `Library.java` (3 pts)
 
@@ -32,19 +32,19 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **YES**  1 pt: The `Cafe` class includes the requested attributes
 
-**NO**  1 pt: The `Cafe` class keeps the inventory up to date, based on sales
+**Yes**  1 pt: The `Cafe` class keeps the inventory up to date, based on sales
 
-**NO**  1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
+**YES**  1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out of inventory.
 
 
 
 ## General Items:
 
-**PART** 4 pts: Programs compile without errors or warnings
+**YES** 4 pts: Programs compile without errors or warnings
 
-**PART** 2 pts: Executes fully & consistently without crashing (exception/freeze)
+**Yes** 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-**PART** 2 pt: Complies with style guidelines (missing items 1 pt each):
+**YES** 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       _____ Classes & class members all have Javadoc header comments
 

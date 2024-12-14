@@ -3,7 +3,12 @@ public class Building {
     protected String name = "<Name Unknown>";
     protected String address = "<Address Unknown>";
     protected int nFloors = 1;
-
+/**
+ * Constructor for Building 
+ * @param name
+ * @param address
+ * @param nFloors
+ */
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
         if (address != null) { this.address = address; } 
@@ -12,23 +17,40 @@ public class Building {
         }
         this.nFloors = nFloors;
     }
-
+/**
+ * Gets name 
+ * @return name 
+ */
     public String getName() {
         return this.name;
     }
-
+/**
+ * Gets Adress 
+ * @return adress 
+ */
     public String getAddress() {
         return this.address;
     }
-
+/**
+ * gets nFloors 
+ * @return nFloors 
+ */
     public int getFloors() {
         return this.nFloors;
     }
-
+/**
+ * Prints out the information about the building 
+ * @return name 
+ * @ruturn nFloors 
+ * @return adress 
+ */
     public String toString() {
         return this.name + " is a " + this.nFloors + "-story building located at " + this.address;
     }
-
+/**
+ * Creates buildings 
+ * @param args
+ */
     public static void main(String[] args) {
         Building fordHall = new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4);
         System.out.println(fordHall);

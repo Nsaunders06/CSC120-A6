@@ -6,7 +6,16 @@ public class Cafe extends Building { // Extends the Building class
     private int nSugarPackets; // The number of sugar packets remaining in inventory
     private int nCreams; // The number of "splashes" of cream remaining in inventory
     private int nCups; // The number of cups remaining in inventory
-//Constructor 
+/**
+ * Constructor for cafe 
+ * @param name
+ * @param address
+ * @param nFloors
+ * @param nCoffeeOunces
+ * @param nSugarPackets
+ * @param nCreams
+ * @param nCups
+ */
     public Cafe(String name, String address, int nFloors, int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
         super(name, address, nFloors);
         this.nCoffeeOunces = nCoffeeOunces; 
@@ -15,19 +24,46 @@ public class Cafe extends Building { // Extends the Building class
         this.nCups = nCups; 
         System.out.println("You have built a cafe: ☕");
     }
-//Methods 
+    
+/**
+ * Allows cafe to restock 
+ * @param nCoffeeOunces
+ * @param nSugarPackets
+ * @param nCreams
+ * @param nCups
+ */
+    private void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) { 
+        this.nCoffeeOunces = nCoffeeOunces+ nCoffeeOunces; 
+        this.nSugarPackets = nSugarPackets + nSugarPackets; 
+        this.nCreams = nCreams + nCreams; 
+        this.nCups = nCups + nCups; 
+    }
+/**
+ * Allows cafe to sell coffee 
+ * @param size
+ * @param nSugarPackets
+ * @param nCreams
+ * @param nCups
+ */
     public void sellCoffee(int size, int nSugarPackets, int nCreams, int nCups){
-        nCoffeeOunces = nCoffeeOunces - size; 
-        nSugarPackets = this.nSugarPackets - nSugarPackets; 
-        nCreams = this.nCreams - nCreams; 
-        nCups = this.nCups - 1; 
+        if (nCoffeeOunces < size | nSugarPackets < nSugarPackets | nCreams < nCreams | nCups < nCups){
+        restock(size, nSugarPackets, nCreams, nCups);   
+        }
+        this.nCoffeeOunces = nCoffeeOunces - size; 
+        this.nSugarPackets = nSugarPackets - nSugarPackets; 
+        this.nCreams = nCreams - nCreams; 
+        this.nCups = nCups - 1;    
+        
+       
     }
 
-    private void restock(int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) { 
-        
-    }
+   /**
+    * Creates cafe's 
+    * @param args
+    */
     public static void main(String[] args) {
-        new Cafe();
+        Cafe CC = new Cafe("CC", "CC", 3, 10, 1, 1, 1);
+        CC.restock(100, 100, 100, 100); 
     }
     
 }
